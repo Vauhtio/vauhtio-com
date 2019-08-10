@@ -1,3 +1,15 @@
+/* Common */
+
+body {
+  font-family: roboto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: lato;
+}
+
 .header {
   height: 560px;
   background-image: linear-gradient(
