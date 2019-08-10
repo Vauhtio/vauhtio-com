@@ -1,0 +1,53 @@
+.header {
+  height: 560px;
+  background-image: linear-gradient(
+      317.71deg,
+      #3e249e 0.68%,
+      rgba(159, 153, 250, 0.5) 99.1%
+    ),
+    url('./team.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.what-is {
+  padding: 96px 0;
+}
+
+.what-is__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 96px;
+}
+
+.loool {
+  background: linear-gradient(180deg, #edecfe 0%, #d2cffc 100%);
+  border-radius: 4px;
+  position: relative;
+}
+
+.what-is__image {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 100%;
+  height: 365px;
+  background: url('./what-is-vauhtio.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: scaleX(-1);
+}

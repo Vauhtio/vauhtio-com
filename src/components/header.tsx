@@ -6,7 +6,6 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
     }}
   >
     <div
@@ -27,6 +26,8 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+
+    <Link to="/page-2/">Go to page 2</Link>
     </div>
   </header>
 )
