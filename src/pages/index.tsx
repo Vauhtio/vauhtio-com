@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <header className="header">
-      <h1>Tarvitseko tulevaisuuden osaajat nyt?</h1>
+      <h1>Tarvitsetko tulevaisuuden osaajat nyt?</h1>
       <p>
         Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman
         koulutusohjelman kautta saada nuoria lupauksia Junior konsulteiksi
@@ -108,6 +108,42 @@ const IndexPage = () => (
             <p className="benefit__description">
               Konsultointijakson lopussa sinä voit päättää haluatko jatkaa
               samaan malliin eteenpäin vai jopa palkata devaajan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="team-section">
+      <p className="section-header__subtitle">Meidän kanssa onnistut</p>
+      <h2 className="section-header">Huippu tiimi</h2>
+
+      <div className="container">
+        <div className="team">
+          <div className="team-member">
+            <div className="team-member__image-wrapper">
+              <div className="team-member__image"></div>
+            </div>
+            <p className="team-member__title">CTO & Founder</p>
+            <h3 className="team-member__name">Henrik Raitasola</h3>
+            <hr className="team-member__separator" />
+            <p className="team-member__description">
+              Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa
+              vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista
+              kirjoittaa
+            </p>
+          </div>
+          <div className="team-member">
+            <div className="team-member__image-wrapper">
+              <div className="team-member__image"></div>
+            </div>
+            <p className="team-member__title">CEO & Founder</p>
+            <h3 className="team-member__name">Timo Isoviita</h3>
+            <hr className="team-member__separator" />
+            <p className="team-member__description">
+              Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa
+              vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista
+              kirjoittaa
             </p>
           </div>
         </div>
