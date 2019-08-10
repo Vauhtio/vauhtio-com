@@ -21,6 +21,14 @@
   margin: 0 auto;
 }
 
+.section-header {
+  text-align: center;
+}
+
+.section-header__subtitle {
+  text-align: center;
+}
+
 .what-is {
   padding: 96px 0;
 }
@@ -50,4 +58,15 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: scaleX(-1);
+}
+
+.how-it-works {
+  padding: 64px 0;
+}
+
+.how-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
+  margin-top: 64px;
 }

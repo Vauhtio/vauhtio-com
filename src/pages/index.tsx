@@ -40,6 +40,27 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+
+    <section className="how-it-works">
+      <p className="section-header__subtitle">Näin me teemme sen</p>
+      <h2 className="section-header">Miten homma toimii?</h2>
+      <div className="container">
+      <div className="how-items">
+        <div className="how-item">
+          <h3>Seulomme devaajat puolestasi</h3>
+          <p>Etsimme parhaat devaajat haastattelemalla ja testaamalla, jotta sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman liiketoiminnan kasvattamiseen!</p>
+        </div>
+        <div className="how-item">
+          <h3>Kuolutamme devaajat puolestasi</h3>
+          <p>Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen koulutuksen, jossa devaajista puristetaan täysiverisiä osaajia. Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi teknologioilla ja käytännöillä.</p>
+        </div>
+        <div className="how-item">
+          <h3>Tuemme devaajaa projektissasi</h3>
+          <p>Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen tukemassa häntä, jos tarvetta on.</p>
+        </div>
+      </div>
+      </div>
+    </section>
   </Layout>
 );
 
