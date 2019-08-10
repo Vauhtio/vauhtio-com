@@ -9,12 +9,14 @@ const IndexPage = () => (
     <SEO title="Home" />
     <header className="header">
       <h1>Tarvitsetko tulevaisuuden osaajat nyt?</h1>
-      <p>
+      <p className="header__description">
         Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman
         koulutusohjelman kautta saada nuoria lupauksia Junior konsulteiksi
         IT-alalle.
       </p>
-      <a href="mailto:myynti@vauhtio.com">Ota yhteyttä</a>
+      <a href="mailto:myynti@vauhtio.com" className="header__cta">
+        Ota yhteyttä
+      </a>
     </header>
 
     <section className="what-is">

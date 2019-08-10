@@ -26,11 +26,28 @@ h3 {
   align-items: center;
   flex-direction: column;
   color: #ffffff;
+  padding: 0 16px;
+}
+
+.header__description {
+  max-width: 768px;
+  text-align: center;
+}
+
+.header__cta {
+  background: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 12px 32px;
+  color: #6c63ff;
+  font-weight: bold;
+  font-family: lato;
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .section-header {
