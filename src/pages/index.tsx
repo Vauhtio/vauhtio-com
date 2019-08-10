@@ -6,18 +6,14 @@ import './home.css';
 import searchIcon from './search.png';
 import starIcon from './star.png';
 import helpIcon from './help.png';
+import whatIsVauhtio from './what-is-vauhtio.jpeg';
+import TeamMemberItem, { TeamMember } from './TeamMemberItem';
 
 type HowItem = {
   title: string;
   description: string;
   icon: string;
   iconAlt: string;
-};
-
-type TeamMember = {
-  name: string;
-  title: string;
-  description: string;
 };
 
 const howItems: HowItem[] = [
@@ -50,12 +46,14 @@ const teamMembers: TeamMember[] = [
     title: 'CTO & Founder',
     description:
       'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
+    image: whatIsVauhtio,
   },
   {
     name: 'Timo Isoviita',
     title: 'CEO & Founder',
     description:
       'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
+    image: whatIsVauhtio,
   },
 ];
 
@@ -165,21 +163,7 @@ const IndexPage = () => (
       <h2 className="section-header">Huippu tiimi</h2>
 
       <div className="container">
-        <div className="team">
-          {teamMembers.map(teamMember => (
-            <div className="team-member">
-              <div className="team-member__image-wrapper">
-                <div className="team-member__image"></div>
-              </div>
-              <p className="team-member__title">{teamMember.title}</p>
-              <h3 className="team-member__name">{teamMember.name}</h3>
-              <hr className="team-member__separator" />
-              <p className="team-member__description">
-                {teamMember.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        <div className="team">{teamMembers.map(TeamMemberItem)}</div>
       </div>
     </section>
   </Layout>
