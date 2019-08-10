@@ -34,7 +34,8 @@ const ImageWrapper = styled.div`
   background: linear-gradient(180deg, #edecfe 0%, #d2cffc 100%);
   border-radius: 4px;
   position: relative;
-  height: 256px;
+  height: 300px;
+  left: -24px;
 `;
 
 const Image = styled.div<Props>`
@@ -42,14 +43,13 @@ const Image = styled.div<Props>`
   left: 24px;
   top: 24px;
   width: 100%;
-  height: 256px;
+  height: 300px;
   background: url(${props => props.teamMember.image});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  transform: scaleX(-1);
 `;
 
 const Title = styled.p`

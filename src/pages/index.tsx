@@ -6,7 +6,8 @@ import './home.css';
 import searchIcon from './search.png';
 import starIcon from './star.png';
 import helpIcon from './help.png';
-import whatIsVauhtio from './what-is-vauhtio.jpeg';
+import henrik from './henrik.jpg';
+import timo from './timo.jpeg';
 import TeamMemberItem, { TeamMember } from './TeamMemberItem';
 
 type HowItem = {
@@ -46,14 +47,14 @@ const teamMembers: TeamMember[] = [
     title: 'CTO & Founder',
     description:
       'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
-    image: whatIsVauhtio,
+    image: henrik,
   },
   {
     name: 'Timo Isoviita',
     title: 'CEO & Founder',
     description:
       'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
-    image: whatIsVauhtio,
+    image: timo,
   },
 ];
 
