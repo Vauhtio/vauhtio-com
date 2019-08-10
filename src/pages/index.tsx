@@ -14,6 +14,12 @@ type HowItem = {
   iconAlt: string;
 };
 
+type TeamMember = {
+  name: string;
+  title: string;
+  description: string;
+};
+
 const howItems: HowItem[] = [
   {
     title: 'Seulomme devaajat puolestasi',
@@ -35,6 +41,21 @@ const howItems: HowItem[] = [
       'Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen tukemassa häntä, jos tarvetta on.',
     icon: helpIcon,
     iconAlt: 'Lifebelt',
+  },
+];
+
+const teamMembers: TeamMember[] = [
+  {
+    name: 'Henrik Raitasola',
+    title: 'CTO & Founder',
+    description:
+      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
+  },
+  {
+    name: 'Timo Isoviita',
+    title: 'CEO & Founder',
+    description:
+      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
   },
 ];
 
@@ -145,32 +166,19 @@ const IndexPage = () => (
 
       <div className="container">
         <div className="team">
-          <div className="team-member">
-            <div className="team-member__image-wrapper">
-              <div className="team-member__image"></div>
+          {teamMembers.map(teamMember => (
+            <div className="team-member">
+              <div className="team-member__image-wrapper">
+                <div className="team-member__image"></div>
+              </div>
+              <p className="team-member__title">{teamMember.title}</p>
+              <h3 className="team-member__name">{teamMember.name}</h3>
+              <hr className="team-member__separator" />
+              <p className="team-member__description">
+                {teamMember.description}
+              </p>
             </div>
-            <p className="team-member__title">CTO & Founder</p>
-            <h3 className="team-member__name">Henrik Raitasola</h3>
-            <hr className="team-member__separator" />
-            <p className="team-member__description">
-              Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa
-              vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista
-              kirjoittaa
-            </p>
-          </div>
-          <div className="team-member">
-            <div className="team-member__image-wrapper">
-              <div className="team-member__image"></div>
-            </div>
-            <p className="team-member__title">CEO & Founder</p>
-            <h3 className="team-member__name">Timo Isoviita</h3>
-            <hr className="team-member__separator" />
-            <p className="team-member__description">
-              Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa
-              vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista
-              kirjoittaa
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
