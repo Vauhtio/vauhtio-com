@@ -6,7 +6,7 @@ import './home.css';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Koti" />
     <header className="header">
       <h1>Tarvitsetko tulevaisuuden osaajat nyt?</h1>
       <p className="header__description">

@@ -22,6 +22,7 @@
     "typeface-roboto": "0.0.75"
   },
   "devDependencies": {
+    "@types/react-helmet": "^5.0.9",
     "prettier": "^1.18.2"
   },
   "keywords": [
