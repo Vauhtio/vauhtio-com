@@ -2,6 +2,8 @@
 
 body {
   font-family: roboto;
+  color: #302f3c;
+  font-size: 16px;
 }
 
 h1,
@@ -98,6 +100,29 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 64px;
   margin-top: 64px;
+}
+
+.how-item__title {
+  font-size: 18px;
+}
+
+.how-item__description {
+  color: #5d5c75;
+}
+
+.how-item__icon-wrapper {
+  background: #edecfe;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.how-item__icon {
+  margin: 0;
 }
 
 .benefits-section {

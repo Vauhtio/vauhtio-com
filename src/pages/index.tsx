@@ -3,6 +3,40 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './home.css';
+import searchIcon from './search.png';
+import starIcon from './star.png';
+import helpIcon from './help.png';
+
+type HowItem = {
+  title: string;
+  description: string;
+  icon: string;
+  iconAlt: string;
+};
+
+const howItems: HowItem[] = [
+  {
+    title: 'Seulomme devaajat puolestasi',
+    description:
+      'Etsimme parhaat devaajat haastattelemalla ja testaamalla, jotta sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman liiketoiminnan kasvattamiseen!',
+    icon: searchIcon,
+    iconAlt: 'Magnifying glass',
+  },
+  {
+    title: 'Kuolutamme devaajat puolestasi',
+    description:
+      'Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen koulutuksen, jossa devaajista puristetaan täysiverisiä osaajia. Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi teknologioilla ja käytännöillä.',
+    icon: starIcon,
+    iconAlt: 'Star',
+  },
+  {
+    title: 'Tuemme devaajaa projektissasi',
+    description:
+      'Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen tukemassa häntä, jos tarvetta on.',
+    icon: helpIcon,
+    iconAlt: 'Lifebelt',
+  },
+];
 
 const IndexPage = () => (
   <Layout>
@@ -48,30 +82,19 @@ const IndexPage = () => (
       <h2 className="section-header">Miten homma toimii?</h2>
       <div className="container">
         <div className="how-items">
-          <div className="how-item">
-            <h3>Seulomme devaajat puolestasi</h3>
-            <p>
-              Etsimme parhaat devaajat haastattelemalla ja testaamalla, jotta
-              sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman
-              liiketoiminnan kasvattamiseen!
-            </p>
-          </div>
-          <div className="how-item">
-            <h3>Kuolutamme devaajat puolestasi</h3>
-            <p>
-              Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen
-              koulutuksen, jossa devaajista puristetaan täysiverisiä osaajia.
-              Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi
-              teknologioilla ja käytännöillä.
-            </p>
-          </div>
-          <div className="how-item">
-            <h3>Tuemme devaajaa projektissasi</h3>
-            <p>
-              Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen
-              tukemassa häntä, jos tarvetta on.
-            </p>
-          </div>
+          {howItems.map(howItem => (
+            <div className="how-item">
+              <div className="how-item__icon-wrapper">
+                <img
+                  className="how-item__icon"
+                  src={howItem.icon}
+                  alt={howItem.iconAlt}
+                />
+              </div>
+              <h3 className="how-item__title">{howItem.title}</h3>
+              <p className="how-item__description">{howItem.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
