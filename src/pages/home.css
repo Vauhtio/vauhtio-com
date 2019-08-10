@@ -158,11 +158,3 @@ h3 {
 .team-section {
   padding: 64px 0;
 }
-
-.team {
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-gap: 96px;
-  margin-top: 64px;
-  justify-content: center;
-}

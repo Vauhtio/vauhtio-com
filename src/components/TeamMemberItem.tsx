@@ -28,6 +28,7 @@ const TeamMemberItem = (teamMember: TeamMember) => {
 
 const Container = styled.div`
   text-align: center;
+  margin-bottom: 48px;
 `;
 
 const ImageWrapper = styled.div`

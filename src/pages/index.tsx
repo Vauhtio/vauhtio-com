@@ -6,9 +6,7 @@ import './home.css';
 import searchIcon from './search.png';
 import starIcon from './star.png';
 import helpIcon from './help.png';
-import henrik from './henrik.jpg';
-import timo from './timo.jpeg';
-import TeamMemberItem, { TeamMember } from './TeamMemberItem';
+import TeamSection from '../components/TeamSection';
 
 type HowItem = {
   title: string;
@@ -38,23 +36,6 @@ const howItems: HowItem[] = [
       'Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen tukemassa häntä, jos tarvetta on.',
     icon: helpIcon,
     iconAlt: 'Lifebelt',
-  },
-];
-
-const teamMembers: TeamMember[] = [
-  {
-    name: 'Henrik Raitasola',
-    title: 'CTO & Founder',
-    description:
-      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
-    image: henrik,
-  },
-  {
-    name: 'Timo Isoviita',
-    title: 'CEO & Founder',
-    description:
-      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
-    image: timo,
   },
 ];
 
@@ -158,15 +139,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-
-    <section className="team-section">
-      <p className="section-header__subtitle">Meidän kanssa onnistut</p>
-      <h2 className="section-header">Huippu tiimi</h2>
-
-      <div className="container">
-        <div className="team">{teamMembers.map(TeamMemberItem)}</div>
-      </div>
-    </section>
+    <TeamSection />
   </Layout>
 );
 
