@@ -45,20 +45,72 @@ const IndexPage = () => (
       <p className="section-header__subtitle">Näin me teemme sen</p>
       <h2 className="section-header">Miten homma toimii?</h2>
       <div className="container">
-      <div className="how-items">
-        <div className="how-item">
-          <h3>Seulomme devaajat puolestasi</h3>
-          <p>Etsimme parhaat devaajat haastattelemalla ja testaamalla, jotta sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman liiketoiminnan kasvattamiseen!</p>
-        </div>
-        <div className="how-item">
-          <h3>Kuolutamme devaajat puolestasi</h3>
-          <p>Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen koulutuksen, jossa devaajista puristetaan täysiverisiä osaajia. Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi teknologioilla ja käytännöillä.</p>
-        </div>
-        <div className="how-item">
-          <h3>Tuemme devaajaa projektissasi</h3>
-          <p>Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen tukemassa häntä, jos tarvetta on.</p>
+        <div className="how-items">
+          <div className="how-item">
+            <h3>Seulomme devaajat puolestasi</h3>
+            <p>
+              Etsimme parhaat devaajat haastattelemalla ja testaamalla, jotta
+              sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman
+              liiketoiminnan kasvattamiseen!
+            </p>
+          </div>
+          <div className="how-item">
+            <h3>Kuolutamme devaajat puolestasi</h3>
+            <p>
+              Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen
+              koulutuksen, jossa devaajista puristetaan täysiverisiä osaajia.
+              Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi
+              teknologioilla ja käytännöillä.
+            </p>
+          </div>
+          <div className="how-item">
+            <h3>Tuemme devaajaa projektissasi</h3>
+            <p>
+              Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen
+              tukemassa häntä, jos tarvetta on.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section className="benefits-section">
+      <p className="section-header__subtitle">Mitä me tuomme pöytään?</p>
+      <h2 className="section-header benefits__title">Näin hyödyt Vauhtiosta</h2>
+      <div className="container">
+        <div className="benefits">
+          <div className="benefit">
+            <h3 className="benefit__title">
+              Säästä aikaa ja keskity ollennaiseen
+            </h3>
+            <p className="benefit__description">
+              Kun Vauhtio hoitaa oikeiden devaajien etsimisen ja heidän
+              kouluttamisen timanttiselle tasolle sinulla jää aikaan omaan
+              liiketoimintaan.
+            </p>
+          </div>
+          <div className="benefit">
+            <h3 className="benefit__title">Kokeile ilman riskejä</h3>
+            <p className="benefit__description">
+              Koska devaajat ovat alussa konsultteina ei sinulla ole
+              työnantajariskiä tms.
+            </p>
+          </div>
+          <div className="benefit">
+            <h3 className="benefit__title">Ulkoista koulutus</h3>
+            <p className="benefit__description">
+              Sinun ei tarvitse huolehtia oman koulutuksen tekemisestä, koska
+              haluat keskittyä oman bisneksen kasvattamiseen.
+            </p>
+          </div>
+          <div className="benefit">
+            <h3 className="benefit__title">Mahdollisuus palkata devaaja</h3>
+            <p className="benefit__description">
+              Konsultointijakson lopussa sinä voit päättää haluatko jatkaa
+              samaan malliin eteenpäin vai jopa palkata devaajan.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </Layout>

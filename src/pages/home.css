@@ -70,3 +70,33 @@
   grid-gap: 64px;
   margin-top: 64px;
 }
+
+.benefits-section {
+  background: #5e55ec;
+  padding: 64px 0;
+}
+
+.benefits__title {
+  color: #ffffff;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 64px;
+  grid-row-gap: 32px;
+}
+
+.benefit {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.benefit__title {
+  color: #ffffff;
+}
+
+.benefit__description {
+  color: #e6e5eb;
+}
