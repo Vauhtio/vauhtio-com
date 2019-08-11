@@ -9,7 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from './Header';
+import Navigation from './Navigation';
 import './layout.css';
 import 'typeface-lato';
 import 'typeface-roboto';
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Navigation siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
