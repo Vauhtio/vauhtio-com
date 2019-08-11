@@ -134,13 +134,6 @@ h3 {
   color: #ffffff;
 }
 
-.benefits {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 64px;
-  grid-row-gap: 32px;
-}
-
 .benefit {
   background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;

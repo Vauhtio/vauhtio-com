@@ -6,6 +6,7 @@ import './home.css';
 
 import TeamSection from '../components/TeamSection';
 import HowSection from '../components/HowSection';
+import BenefitsSection from '../components/BenefitsSection';
 
 const IndexPage = () => (
   <Layout>
@@ -48,45 +49,7 @@ const IndexPage = () => (
 
     <HowSection />
 
-    <section className="benefits-section">
-      <p className="section-header__subtitle">Mitä me tuomme pöytään?</p>
-      <h2 className="section-header benefits__title">Näin hyödyt Vauhtiosta</h2>
-      <div className="container">
-        <div className="benefits">
-          <div className="benefit">
-            <h3 className="benefit__title">
-              Säästä aikaa ja keskity ollennaiseen
-            </h3>
-            <p className="benefit__description">
-              Kun Vauhtio hoitaa oikeiden devaajien etsimisen ja heidän
-              kouluttamisen timanttiselle tasolle sinulla jää aikaan omaan
-              liiketoimintaan.
-            </p>
-          </div>
-          <div className="benefit">
-            <h3 className="benefit__title">Kokeile ilman riskejä</h3>
-            <p className="benefit__description">
-              Koska devaajat ovat alussa konsultteina ei sinulla ole
-              työnantajariskiä tms.
-            </p>
-          </div>
-          <div className="benefit">
-            <h3 className="benefit__title">Ulkoista koulutus</h3>
-            <p className="benefit__description">
-              Sinun ei tarvitse huolehtia oman koulutuksen tekemisestä, koska
-              haluat keskittyä oman bisneksen kasvattamiseen.
-            </p>
-          </div>
-          <div className="benefit">
-            <h3 className="benefit__title">Mahdollisuus palkata devaaja</h3>
-            <p className="benefit__description">
-              Konsultointijakson lopussa sinä voit päättää haluatko jatkaa
-              samaan malliin eteenpäin vai jopa palkata devaajan.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <BenefitsSection />
 
     <TeamSection />
   </Layout>
