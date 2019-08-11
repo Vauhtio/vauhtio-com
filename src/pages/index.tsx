@@ -9,6 +9,7 @@ import HowSection from '../components/HowSection';
 import BenefitsSection from '../components/BenefitsSection';
 import WhatIsSection from '../components/WhatIsSection';
 import HomeHeader from '../components/HomeHeader';
+import ContactSection from '../components/ContactSection';
 
 const IndexPage = () => (
   <Layout>
@@ -23,6 +24,8 @@ const IndexPage = () => (
     <BenefitsSection />
 
     <TeamSection />
+
+    <ContactSection />
   </Layout>
 );
 
