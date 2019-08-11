@@ -95,10 +95,15 @@ const Container = styled.div`
 `;
 
 const Icon = styled.img`
+  width: 32px;
+  height: 32px;
   margin: 0;
-  width: 48px;
-  height: 48px;
   margin-right: 16px;
+
+  @media (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+  }
 `;
 
 const Title = styled.h3`
