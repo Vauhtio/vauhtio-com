@@ -12,25 +12,6 @@ h3 {
   font-family: lato;
 }
 
-.header {
-  height: 560px;
-  background-image: linear-gradient(
-      317.71deg,
-      #3e249e 0.68%,
-      rgba(159, 153, 250, 0.5) 99.1%
-    ),
-    url('./team.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #ffffff;
-  padding: 0 16px;
-}
-
 .header__description {
   max-width: 768px;
   text-align: center;
