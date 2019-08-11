@@ -10,7 +10,7 @@
 }
 
 .nav-link--active {
-  /* font-weight: 600; */
+  text-shadow: 0 0 1px #333;
 }
 
 .nav-link__border {
