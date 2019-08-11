@@ -37,7 +37,7 @@ const TeamSection = () => {
   return (
     <section className="team-section">
       <p className="section-header__subtitle">Meidän kanssa onnistut</p>
-      <h2 className="section-header">Huippu tiimi</h2>
+      <h2 className="section-header">Huipputiimi</h2>
 
       <div className="container">
         <TeamMembers>{teamMembers.map(TeamMemberItem)}</TeamMembers>
