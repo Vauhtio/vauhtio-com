@@ -3,6 +3,7 @@ import React from 'react';
 import envelope from '../pages/envelope.png';
 import triangle from '../pages/triangle.svg';
 import styled from 'styled-components';
+import Footer from './Footer';
 
 const ContactSection = () => {
   return (
@@ -21,6 +22,7 @@ const ContactSection = () => {
           </CtaLink>
         </Card>
       </div>
+      <Footer />
     </Container>
   );
 };
