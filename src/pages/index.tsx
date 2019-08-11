@@ -7,6 +7,7 @@ import './home.css';
 import TeamSection from '../components/TeamSection';
 import HowSection from '../components/HowSection';
 import BenefitsSection from '../components/BenefitsSection';
+import WhatIsSection from '../components/WhatIsSection';
 
 const IndexPage = () => (
   <Layout>
@@ -23,29 +24,7 @@ const IndexPage = () => (
       </a>
     </header>
 
-    <section className="what-is">
-      <div className="container">
-        <div className="what-is__content">
-          <div className="loool">
-            <div className="what-is__image" />
-          </div>
-          <div>
-            <p>Mikä on Vauhtio?</p>
-            <h2>Me autamme yritystäsi saamaan kovia tekijöitä!</h2>
-            <p>
-              Miten lähestyä työnantajia? Kuinka olla vakuuttava
-              työhaastattelussa? Entä mitä tapahtuu työhaastattelun jälkeen?
-              Mitä minulta odotetaan, olenko tarpeeksi hyvä?
-            </p>
-            <p>Me täällä Vauhtiolla tunnistetaan sun ongelma!</p>
-            <p>
-              Usein juuri ensimmäisen työpaikan saaminen on haasteellista kun
-              kokemusta tai näyttöjä ei ole juuri kertynyt.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <WhatIsSection />
 
     <HowSection />
 
