@@ -53,7 +53,7 @@ const BenefitsSection = () => {
         <Benefits>
           {benefits.map(benefit => (
             <Container>
-              <Icon src={benefit.icon} alt="Lol" />
+              <Icon src={benefit.icon} alt={benefit.iconAlt} />
               <div>
                 <Title>{benefit.title}</Title>
                 <Description>{benefit.description}</Description>
