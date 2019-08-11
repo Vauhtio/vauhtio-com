@@ -5,23 +5,8 @@
   padding: 18px 0;
 }
 
-.nav-links {
-  list-style: none;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 48px;
-  align-items: center;
-}
-
 .nav-item {
   margin: 0;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #302f3c;
-  position: relative;
 }
 
 .nav-link--active {
@@ -42,17 +27,4 @@
 
 .nav-link--active .nav-link__border {
   display: block;
-}
-
-.logo-link {
-  text-decoration: none;
-  color: #302f3c;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-
-.logo-image {
-  margin: 0;
-  margin-right: 16px;
 }
