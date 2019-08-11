@@ -55,6 +55,7 @@ const Image = styled.div<Props>`
 
 const Title = styled.p`
   margin-top: 48px;
+  margin-bottom: 8px;
 `;
 
 const Name = styled.h3``;

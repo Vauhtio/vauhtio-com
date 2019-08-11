@@ -45,6 +45,7 @@ const Container = styled.header`
 
 const Header = styled.h1`
   font-size: 28px;
+  text-align: center;
 
   @media (min-width: 576px) {
     font-size: 40px;
