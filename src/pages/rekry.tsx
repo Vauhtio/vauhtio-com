@@ -8,6 +8,7 @@ import IntroductionSection from '../components/IntroductionSection';
 import './rekry.css';
 import TimelineSection from '../components/TimelineSection';
 import WhoFitsSection from '../components/WhoFitsSection';
+import TestimonialsSection from '../components/TestimonialsSection';
 
 const SecondPage = () => (
   <Layout>
@@ -26,6 +27,8 @@ const SecondPage = () => (
     <TimelineSection />
 
     <WhoFitsSection />
+
+    <TestimonialsSection />
   </Layout>
 );
 
