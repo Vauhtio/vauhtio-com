@@ -11,6 +11,7 @@ import WhatIsSection from '../components/WhatIsSection';
 import PageHeader from '../components/PageHeader';
 import ContactSection from '../components/ContactSection';
 import team from '../pages/team.jpeg';
+import triangle from '../pages/triangle.svg';
 
 const IndexPage = () => (
   <Layout>
@@ -32,7 +33,11 @@ const IndexPage = () => (
 
     <TeamSection />
 
-    <ContactSection />
+    <ContactSection
+      triangle={triangle}
+      description="Hyvä homma! Lähetä meille sähköpostia ja kerro tarpeistasi niin olemme yhteydessä!"
+      ctaEmail="myynti@vauhtio.com"
+    />
   </Layout>
 );
 

@@ -1,24 +1,26 @@
 import React from 'react';
 
 import envelope from '../pages/envelope.png';
-import triangle from '../pages/triangle.svg';
 import styled from 'styled-components';
 import Footer from './Footer';
 
-const ContactSection = () => {
+type Props = {
+  triangle: string;
+  description: string;
+  ctaEmail: string;
+};
+
+const ContactSection = (props: Props) => {
   return (
     <Container>
       <div className="container">
-        <Triangle src={triangle} alt="Overlay" />
+        <Triangle src={props.triangle} alt="Overlay" />
         <Card>
           <Title>Kiinnostuitko?</Title>
-          <Description>
-            Hyvä homma! Lähetä meille sähköpostia ja kerro tarpeistasi niin
-            olemme yhteydessä!
-          </Description>
-          <CtaLink href="mailto:myynti@vauhtio.com">
+          <Description>{props.description}</Description>
+          <CtaLink href={`mailto:${props.ctaEmail}`}>
             <Envelope src={envelope} alt="Envelope" />
-            myynti@vauhtio.com
+            {props.ctaEmail}
           </CtaLink>
         </Card>
       </div>

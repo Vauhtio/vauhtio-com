@@ -9,6 +9,9 @@ import './rekry.css';
 import TimelineSection from '../components/TimelineSection';
 import WhoFitsSection from '../components/WhoFitsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import ContactSection from '../components/ContactSection';
+
+import triangle from '../pages/triangle-grey.svg';
 
 const SecondPage = () => (
   <Layout>
@@ -29,6 +32,12 @@ const SecondPage = () => (
     <WhoFitsSection />
 
     <TestimonialsSection />
+
+    <ContactSection
+      triangle={triangle}
+      description="Hyvä homma! Lähetä meille sähköpostia, jossa kerrot vähän itsestäsi niin otetaan suhun yhteyttä ja laitetaan pyörät pyörimään."
+      ctaEmail="rekry@vauhtio.com"
+    />
   </Layout>
 );
 
