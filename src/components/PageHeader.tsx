@@ -3,23 +3,27 @@ import styled from 'styled-components';
 
 import team from '../pages/team.jpeg';
 
-const HomeHeader = () => {
+type Props = {
+  title: string;
+  description: string;
+  ctaText: string;
+  ctaEmail: string;
+  backgroundImage: string;
+};
+
+const PageHeader = (props: Props) => {
   return (
-    <Container>
-      <Header>Tarvitsetko tulevaisuuden osaajat nyt?</Header>
-      <p className="header__description">
-        Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman
-        koulutusohjelman kautta saada nuoria lupauksia Junior konsulteiksi
-        IT-alalle.
-      </p>
-      <a href="mailto:myynti@vauhtio.com" className="header__cta">
-        Ota yhteyttä
+    <Container backgroundImageUrl={props.backgroundImage}>
+      <Header>{props.title}</Header>
+      <p className="header__description">{props.description}</p>
+      <a href={`mailto:${props.ctaEmail}`} className="header__cta">
+        {props.ctaText}
       </a>
     </Container>
   );
 };
 
-const Container = styled.header`
+const Container = styled.header<{ backgroundImageUrl: string }>`
   height: 80vh;
 
   background-image: linear-gradient(
@@ -27,7 +31,7 @@ const Container = styled.header`
       #3e249e 0.68%,
       rgba(159, 153, 250, 0.5) 99.1%
     ),
-    url(${team});
+    url(${props => props.backgroundImageUrl});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -52,4 +56,4 @@ const Header = styled.h1`
   }
 `;
 
-export default HomeHeader;
+export default PageHeader;
