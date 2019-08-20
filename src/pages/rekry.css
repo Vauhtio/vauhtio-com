@@ -27,3 +27,127 @@
     line-height: 28px;
   }
 }
+
+.timeline-section {
+  background: #edecfe;
+  padding: 32px 0;
+}
+
+.timeline-section h2 {
+  /* font-family: var(--header-font); */
+  /* color: var(--grey-color-900); */
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.timeline-section .timeline {
+  display: grid;
+  grid-template-columns: auto 70px;
+  grid-column-gap: 128px;
+}
+
+.timeline-section .label-container {
+  border-left: 2px solid #6c5ce7;
+  position: relative;
+}
+
+.timeline-section .label {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 24px 32px;
+  /* font-family: var(--header-font); */
+  position: absolute;
+  right: 100%;
+  transform: translateX(50%);
+  font-weight: 600;
+}
+
+.timeline-section .label--end {
+  bottom: 0;
+}
+
+.timeline-section .timeline-cards {
+  display: grid;
+  grid-gap: 16px;
+  padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .timeline-section .label {
+    padding: 12px 16px;
+  }
+
+  .timeline-section .timeline {
+    grid-template-columns: auto 48px;
+    grid-column-gap: 56px;
+  }
+}
+
+@media (max-width: 650px) {
+  .timeline-section h2 {
+    font-size: 21px;
+  }
+}
+
+.card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card h3 {
+  /* font-family: var(--header-font); */
+  /* color: var(--grey-color-900); */
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.card p {
+  line-height: 28px;
+  /* color: var(--grey-color-700); */
+}
+
+.card__line {
+  position: absolute;
+  left: 100%;
+  top: 64px;
+  height: 2px;
+  background: #6c5ce7;
+  width: 128px;
+  z-index: 1;
+}
+
+.card__line__point {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #6c5ce7;
+  background: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-left: auto;
+  position: relative;
+  left: 9px;
+  top: -7px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 16px;
+  }
+
+  .card__line {
+    width: 56px;
+  }
+}
+
+@media (max-width: 650px) {
+  .card h3 {
+    font-size: 18px;
+  }
+}

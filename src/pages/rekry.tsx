@@ -6,6 +6,7 @@ import PageHeader from '../components/PageHeader';
 import team from '../pages/team2.jpeg';
 import IntroductionSection from '../components/IntroductionSection';
 import './rekry.css';
+import TimelineSection from '../components/TimelineSection';
 
 const SecondPage = () => (
   <Layout>
@@ -20,6 +21,8 @@ const SecondPage = () => (
     />
 
     <IntroductionSection />
+
+    <TimelineSection />
   </Layout>
 );
 
