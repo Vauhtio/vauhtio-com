@@ -26,7 +26,7 @@ const Header: React.FC<Props> = ({ siteTitle }) => (
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/page-2/" activeClassName="nav-link--active">
+          <NavLink to="/rekry/" activeClassName="nav-link--active">
             Tekijöille
             <div className="nav-link__border"></div>
           </NavLink>
