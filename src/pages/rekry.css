@@ -1,0 +1,29 @@
+.introduction-section {
+  padding: 48px 0;
+}
+
+.introduction-section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0 auto 48px;
+  line-height: 40px;
+  max-width: 600px;
+}
+
+.introduction-section p {
+  line-height: 28px;
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
+@media (max-width: 767px) {
+  .introduction-section {
+    padding: 32px 0;
+  }
+
+  .introduction-section h2 {
+    font-size: 21px;
+    margin-bottom: 32px;
+    line-height: 28px;
+  }
+}
