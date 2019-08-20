@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import team from '../pages/team.jpeg';
-
 type Props = {
   title: string;
   description: string;
