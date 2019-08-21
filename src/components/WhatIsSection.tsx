@@ -16,17 +16,11 @@ const WhatIsSection = () => {
               <Line />
               <div>Mikä on Vauhtio?</div>
             </LineContainer>
-            <h2>Me autamme yritystäsi saamaan kovia tekijöitä!</h2>
+            <h2>Me autamme yritystäsi saamaan lupaavia tekijöitä!</h2>
             <p>
-              Miten lähestyä työnantajia? Kuinka olla vakuuttava
-              työhaastattelussa? Entä mitä tapahtuu työhaastattelun jälkeen?
-              Mitä minulta odotetaan, olenko tarpeeksi hyvä?
+              Vauhtion tavoitteena on auttaa työnantajia löytämään lahjakkuudet ja madaltaa kynnystä kokeilla junior kehittäjän kanssa työskentelemistä.
             </p>
-            <p>Me täällä Vauhtiolla tunnistetaan sun ongelma!</p>
-            <p>
-              Usein juuri ensimmäisen työpaikan saaminen on haasteellista kun
-              kokemusta tai näyttöjä ei ole juuri kertynyt.
-            </p>
+            <p>Vauhtiin päästään ilman työnantajariskiä ja kun siivet kantaa, yhteinen tavoitteemme on rekrytointi yritykseenne.</p>
           </div>
         </Content>
       </div>

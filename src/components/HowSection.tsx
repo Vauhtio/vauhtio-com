@@ -9,16 +9,16 @@ import Subheader from './Subheader';
 
 const howItems: HowSectionItem[] = [
   {
-    title: 'Seulomme devaajat puolestasi',
+    title: 'Seulomme kehittäjät puolestasi',
     description:
-      'Etsimme parhaat devaajat haastattelemalla ja testaamalla, jotta sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman liiketoiminnan kasvattamiseen!',
+      'Etsimme devaajat haastattelemalla ja testaamalla, jotta sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman liiketoiminnan kasvattamiseen!',
     icon: searchIcon,
     iconAlt: 'Magnifying glass',
   },
   {
-    title: 'Kuolutamme devaajat puolestasi',
+    title: 'Koulutamme ammattilaisia',
     description:
-      'Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen koulutuksen, jossa devaajista puristetaan täysiverisiä osaajia. Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi teknologioilla ja käytännöillä.',
+      'Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen koulutuksen, jossa opiskelijoista puristetaan ammattiuran ensimmäistä askelta ottavia junior kehittäjiä. Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi teknologioilla ja käytännöillä.',
     icon: starIcon,
     iconAlt: 'Star',
   },

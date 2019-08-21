@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
     name: 'Timo Isoviita',
     title: 'CEO & Founder',
     description:
-      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
+      'Vauhtioon etsin sellaisia ihmisiä, kenen kanssa itse haluaisin työskennellä. Näkemyksessä auttaa yli kymmenen vuoden kokemus kehittäjän tehtävistä. Vauhtiossa vastaan liiketoiminnasta, taloudesta ja asiakkuuksista. ',
     image: timo,
   },
 ];
