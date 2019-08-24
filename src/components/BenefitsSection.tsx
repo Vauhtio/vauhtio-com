@@ -26,7 +26,7 @@ const benefits: Benefit[] = [
   {
     title: 'Kokeile ilman riskejä',
     description:
-      'Koska devaajat ovat alussa konsultteina ei sinulla ole työnantajariskiä.',
+      'Koska kehittäjät ovat alussa konsultteina ei sinulla ole työnantajariskiä.',
     icon: check,
     iconAlt: 'Checkmark',
   },
@@ -38,7 +38,7 @@ const benefits: Benefit[] = [
     iconAlt: 'Arrow pointing out',
   },
   {
-    title: 'Mahdollisuus palkata devaaja',
+    title: 'Mahdollisuus rekrytoida',
     description:
       'Konsultointijakson lopussa sinä voit päättää haluatko palkata kehittäjän. Yhteistyön jatkaminen konsultointipohjalla on myös yksi mahdollisuus.  ',
     icon: file,

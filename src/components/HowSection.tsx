@@ -11,7 +11,7 @@ const howItems: HowSectionItem[] = [
   {
     title: 'Seulomme kehittäjät puolestasi',
     description:
-      'Etsimme devaajat haastattelemalla ja testaamalla, jotta sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman liiketoiminnan kasvattamiseen!',
+      'Etsimme kehittäjät haastattelemalla ja testaamalla, jotta sinun ei tarvitse käyttää aikaasi siihen vaan voit keskittyä oman liiketoiminnan kasvattamiseen!',
     icon: searchIcon,
     iconAlt: 'Magnifying glass',
   },
@@ -23,9 +23,9 @@ const howItems: HowSectionItem[] = [
     iconAlt: 'Star',
   },
   {
-    title: 'Tuemme devaajaa projektissasi',
+    title: 'Tuemme kehittäjää projektissasi',
     description:
-      'Kun devaaja on projektissasi työskentelemässä Vauhtio on edelleen tukemassa häntä, jos tarvetta on.',
+      'Kun kehittäjä on projektissasi työskentelemässä Vauhtio on edelleen tukemassa häntä, jos tarvetta on.',
     icon: helpIcon,
     iconAlt: 'Lifebelt',
   },
