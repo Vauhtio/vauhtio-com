@@ -12,7 +12,10 @@ const WhatIsSection = () => {
             <Image />
           </ImageWrapper>
           <div>
-            <p>Mikä on Vauhtio?</p>
+            <LineContainer>
+              <Line />
+              <div>Mikä on Vauhtio?</div>
+            </LineContainer>
             <h2>Me autamme yritystäsi saamaan kovia tekijöitä!</h2>
             <p>
               Miten lähestyä työnantajia? Kuinka olla vakuuttava
@@ -30,6 +33,19 @@ const WhatIsSection = () => {
     </section>
   );
 };
+
+const LineContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+`;
+
+const Line = styled.div`
+  height: 2px;
+  width: 48px;
+  background: #6c63ff;
+  margin-right: 16px;
+`;
 
 const Content = styled.div`
   display: flex;
