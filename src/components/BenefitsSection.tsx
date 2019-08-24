@@ -5,6 +5,7 @@ import timer from '../pages/timer.png';
 import check from '../pages/check.png';
 import exporting from '../pages/exporting.png';
 import file from '../pages/file.png';
+import Subheader from './Subheader';
 
 type Benefit = {
   title: string;
@@ -66,9 +67,8 @@ const BenefitsSection = () => {
   );
 };
 
-const Subtitle = styled.p`
-  text-align: center;
-  color: #ffffff;
+const Subtitle = styled(Subheader)`
+  color: #b8f3ff;
 `;
 
 const Benefits = styled.div`
