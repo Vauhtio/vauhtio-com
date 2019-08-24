@@ -21,7 +21,7 @@ const IndexPage = () => (
       title="Tarvitsetko tulevaisuuden osaajat nyt?"
       description="Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman koulutusohjelman kautta saada nuoria lupauksia Junior konsulteiksi IT-alalle."
       ctaText="Ota yhteyttä"
-      ctaEmail="myynti@vauhtio.com"
+      ctaEmail="timo.isoviita@vauhtio.com"
       backgroundImage={team}
     />
 
