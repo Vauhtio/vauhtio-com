@@ -36,7 +36,7 @@ const IndexPage = () => (
     <ContactSection
       triangle={triangle}
       description="Hyvä homma! Lähetä meille sähköpostia ja kerro tarpeistasi niin olemme yhteydessä!"
-      ctaEmail="myynti@vauhtio.com"
+      ctaEmail="timo.isoviita@vauhtio.com"
     />
   </Layout>
 );
