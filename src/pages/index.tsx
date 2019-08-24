@@ -13,6 +13,8 @@ import ContactSection from '../components/ContactSection';
 import team from '../pages/team.jpeg';
 import triangle from '../pages/triangle.svg';
 
+const ctaEmail = 'timo.isoviita@vauhtio.com';
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Koti" />
@@ -21,7 +23,7 @@ const IndexPage = () => (
       title="Tarvitsetko tulevaisuuden osaajat nyt?"
       description="Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman koulutusohjelman kautta saada nuoria lupauksia Junior konsulteiksi IT-alalle."
       ctaText="Ota yhteyttä"
-      ctaEmail="myynti@vauhtio.com"
+      ctaEmail={ctaEmail}
       backgroundImage={team}
     />
 
@@ -36,7 +38,7 @@ const IndexPage = () => (
     <ContactSection
       triangle={triangle}
       description="Hyvä homma! Lähetä meille sähköpostia ja kerro tarpeistasi niin olemme yhteydessä!"
-      ctaEmail="myynti@vauhtio.com"
+      ctaEmail={ctaEmail}
     />
   </Layout>
 );

@@ -19,28 +19,28 @@ const benefits: Benefit[] = [
   {
     title: 'Säästä aikaa ja keskity ollennaiseen',
     description:
-      'Kun Vauhtio hoitaa oikeiden devaajien etsimisen ja heidän kouluttamisen timanttiselle tasolle sinulla jää aikaan omaan liiketoimintaan.',
+      'Kun Vauhtio hoitaa lupaavien kehittäjien etsimisen ja heidän alustavan kouluttamisen jää sinulle aikaa omaan liiketoimintaan.',
     icon: timer,
     iconAlt: 'Timer clock',
   },
   {
     title: 'Kokeile ilman riskejä',
     description:
-      'Koska devaajat ovat alussa konsultteina ei sinulla ole työnantajariskiä tms.',
+      'Koska kehittäjät ovat alussa konsultteina ei sinulla ole työnantajariskiä.',
     icon: check,
     iconAlt: 'Checkmark',
   },
   {
     title: 'Ulkoista koulutus',
     description:
-      'Sinun ei tarvitse huolehtia oman koulutuksen tekemisestä, koska haluat keskittyä oman bisneksen kasvattamiseen.',
+      'Mahdollisuus räätälöidä onboarding tarkoittaa sitä, että voit keskittyä muihin tärkeisiin asioihin ja silti päästä nopeasti vauhtiin uusien tekijöiden kanssa.',
     icon: exporting,
     iconAlt: 'Arrow pointing out',
   },
   {
-    title: 'Mahdollisuus palkata devaaja',
+    title: 'Mahdollisuus rekrytoida',
     description:
-      'Konsultointijakson lopussa sinä voit päättää haluatko jatkaa samaan malliin eteenpäin vai jopa palkata devaajan.',
+      'Konsultointijakson lopussa sinä voit päättää haluatko palkata kehittäjän. Yhteistyön jatkaminen konsultointipohjalla on myös yksi mahdollisuus.  ',
     icon: file,
     iconAlt: 'Folder with files',
   },
@@ -51,7 +51,7 @@ const BenefitsSection = () => {
     <Section>
       <LeftEllipse src={ellipse} />
       <RightEllipse src={ellipse} />
-      <Subtitle>Mitä me tuomme pöytään?</Subtitle>
+      <Subtitle>Mitä Vauhtio tarjoaa?</Subtitle>
       <h2 className="section-header benefits__title">Näin hyödyt Vauhtiosta</h2>
       <div className="container">
         <Benefits>

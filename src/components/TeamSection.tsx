@@ -8,18 +8,18 @@ import Subheader from './Subheader';
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'Henrik Raitasola',
-    title: 'CTO & Founder',
-    description:
-      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
-    image: henrik,
-  },
-  {
     name: 'Timo Isoviita',
     title: 'CEO & Founder',
     description:
-      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
+      'Vauhtioon etsin sellaisia ihmisiä, kenen kanssa itse haluaisin työskennellä. Näkemyksessä auttaa yli kymmenen vuoden kokemus kehittäjän tehtävistä. Vauhtiossa vastaan liiketoiminnasta, taloudesta ja asiakkuuksista. ',
     image: timo,
+  },
+  {
+    name: 'Henrik Raitasola',
+    title: 'CTO & Founder',
+    description:
+      'Vauhtiossa autan kehittäjiämme pääsemään maksimaaliseen osaamiseen niin lyhyessä ajassa kuin mahdollista. Viiden vuoden kehittäjän kokemuksellani pystyn auttamaan sinun yritystäsi samaan projektiisi sopivat kehittäjät.',
+    image: henrik,
   },
 ];
 
