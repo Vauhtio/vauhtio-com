@@ -5,6 +5,7 @@ import timer from '../pages/timer.png';
 import check from '../pages/check.png';
 import exporting from '../pages/exporting.png';
 import file from '../pages/file.png';
+import ellipse from '../pages/ellipse.png';
 import Subheader from './Subheader';
 
 type Benefit = {
@@ -47,7 +48,9 @@ const benefits: Benefit[] = [
 
 const BenefitsSection = () => {
   return (
-    <section className="benefits-section">
+    <Section>
+      <LeftEllipse src={ellipse} />
+      <RightEllipse src={ellipse} />
       <Subtitle>Mitä me tuomme pöytään?</Subtitle>
       <h2 className="section-header benefits__title">Näin hyödyt Vauhtiosta</h2>
       <div className="container">
@@ -63,9 +66,40 @@ const BenefitsSection = () => {
           ))}
         </Benefits>
       </div>
-    </section>
+    </Section>
   );
 };
+
+const Section = styled.section`
+  background: #5e55ec;
+  position: relative;
+  padding: 64px 0;
+
+  @media (min-width: 992px) {
+    padding: 64px 0 96px;
+  }
+`;
+
+const Ellipse = styled.img`
+  display: none;
+  position: absolute;
+  margin: 0;
+
+  @media (min-width: 992px) {
+    display: inline-block;
+  }
+`;
+
+const LeftEllipse = styled(Ellipse)`
+  left: 0;
+  top: 0;
+`;
+
+const RightEllipse = styled(Ellipse)`
+  right: 0;
+  bottom: 0;
+  transform: scaleX(-1) scaleY(-1);
+`;
 
 const Subtitle = styled(Subheader)`
   color: #b8f3ff;
