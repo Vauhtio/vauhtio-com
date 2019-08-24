@@ -5,6 +5,7 @@ import starIcon from '../pages/star.png';
 import helpIcon from '../pages/help.png';
 import styled from 'styled-components';
 import HowItem, { HowSectionItem } from './HowItem';
+import Subheader from './Subheader';
 
 const howItems: HowSectionItem[] = [
   {
@@ -47,7 +48,7 @@ const Items = styled.div`
 const HowSection = () => {
   return (
     <section className="how-it-works">
-      <p className="section-header__subtitle">Näin me teemme sen</p>
+      <Subheader>Näin me teemme sen</Subheader>
       <h2 className="section-header">Miten homma toimii?</h2>
       <div className="container">
         <Items>{howItems.map(HowItem)}</Items>

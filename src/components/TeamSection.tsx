@@ -4,6 +4,7 @@ import TeamMemberItem, { TeamMember } from './TeamMemberItem';
 import henrik from '../pages/henrik.jpg';
 import timo from '../pages/timo.jpeg';
 import styled from 'styled-components';
+import Subheader from './Subheader';
 
 const teamMembers: TeamMember[] = [
   {
@@ -36,7 +37,7 @@ const TeamMembers = styled.div`
 const TeamSection = () => {
   return (
     <section className="team-section">
-      <p className="section-header__subtitle">Meidän kanssa onnistut</p>
+      <Subheader>Meidän kanssa onnistut</Subheader>
       <h2 className="section-header">Huipputiimi</h2>
 
       <div className="container">
