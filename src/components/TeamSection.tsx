@@ -11,7 +11,7 @@ const teamMembers: TeamMember[] = [
     name: 'Henrik Raitasola',
     title: 'CTO & Founder',
     description:
-      'Olen tehnyt sitä sun tätä ja vähän kaikkee muuttakin. Vauhtiossa vastaan junnuista ja diipa daapa. Tähän kantsii kaikenlaista kirjoittaa',
+      'Vauhtiossa autan kehittäjiämme pääsemään maksimaaliseen osaamiseen niin lyhyessä ajassa kuin mahdollista. Viiden vuoden kehittäjän kokemuksellani pystyn auttamaan sinun yritystäsi samaan projektiisi sopivat kehittäjät.',
     image: henrik,
   },
   {
