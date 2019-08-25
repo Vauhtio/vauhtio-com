@@ -30,11 +30,9 @@ module.exports = {
     `gatsby-plugin-typescript`,
     'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ['Lato', 'Roboto'],
-        },
+        fonts: [{ family: 'Lato' }, { family: 'Roboto' }],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
