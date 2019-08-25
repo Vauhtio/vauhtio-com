@@ -21,7 +21,7 @@ const IndexPage = () => (
 
     <PageHeader
       title="Tarvitsetko tulevaisuuden osaajat nyt?"
-      description="Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman koulutusohjelman kautta saada nuoria lupauksia Junior konsulteiksi IT-alalle."
+      description="Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman koulutusohjelman kautta saada nuoria lupauksia Junior-konsulteiksi IT-alalle."
       ctaText="Ota yhteyttä"
       ctaEmail={ctaEmail}
       backgroundImage={team}
