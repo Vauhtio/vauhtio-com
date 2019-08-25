@@ -1,6 +1,6 @@
 # Vauhtio home page
 
-This is repository for vauhtio.com which is Vauhtio's home page
+This is repository for https://vauhtio.com which is Vauhtio's home page
 
 ## Developing
 
