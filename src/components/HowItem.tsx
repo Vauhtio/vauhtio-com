@@ -18,7 +18,7 @@ const HowItem = (howItem: HowSectionItem) => {
           alt={howItem.iconAlt}
         />
       </div>
-      <h3 className="how-item__title">{howItem.title}</h3>
+      <Title>{howItem.title}</Title>
       <p className="how-item__description">{howItem.description}</p>
     </Container>
   );
@@ -26,6 +26,11 @@ const HowItem = (howItem: HowSectionItem) => {
 
 const Container = styled.div`
   margin-bottom: 32px;
+`;
+
+const Title = styled.h3`
+  font-size: 18px;
+  margin-bottom: 16px;
 `;
 
 export default HowItem;
