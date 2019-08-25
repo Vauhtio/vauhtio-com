@@ -84,6 +84,7 @@ const Ellipse = styled.img`
   display: none;
   position: absolute;
   margin: 0;
+  pointer-events: none;
 
   @media (min-width: 992px) {
     display: inline-block;
