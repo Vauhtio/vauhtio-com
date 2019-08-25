@@ -48,6 +48,7 @@ const Container = styled.header<{ backgroundImageUrl: string }>`
 const Header = styled.h1`
   font-size: 28px;
   text-align: center;
+  color: #ffffff;
 
   @media (min-width: 576px) {
     font-size: 40px;

@@ -2,14 +2,15 @@
 
 body {
   font-family: roboto;
-  color: #302f3c;
   font-size: 16px;
+  color: #5d5c75;
 }
 
 h1,
 h2,
 h3 {
   font-family: lato;
+  color: #302f3c;
 }
 
 .header__description {
