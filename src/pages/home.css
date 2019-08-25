@@ -38,14 +38,6 @@ h3 {
   text-align: center;
 }
 
-.what-is {
-  padding: 96px 0;
-}
-
-.how-it-works {
-  padding: 64px 0;
-}
-
 .how-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

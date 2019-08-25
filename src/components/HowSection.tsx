@@ -31,10 +31,31 @@ const howItems: HowSectionItem[] = [
   },
 ];
 
+const HowSection = () => {
+  return (
+    <Section>
+      <Subheader>Näin me teemme sen</Subheader>
+      <h2 className="section-header">Miten homma toimii?</h2>
+      <div className="container">
+        <Items>{howItems.map(HowItem)}</Items>
+      </div>
+    </Section>
+  );
+};
+
+const Section = styled.section`
+  padding: 48px 0;
+
+  @media (min-width: 768px) {
+    padding: 64px 0;
+  }
+`;
+
 const Items = styled.div`
-  margin-top: 64px;
+  margin-top: 48px;
 
   @media (min-width: 576px) {
+    margin-top: 64px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 32px;
@@ -44,17 +65,5 @@ const Items = styled.div`
     grid-gap: 64px;
   }
 `;
-
-const HowSection = () => {
-  return (
-    <section className="how-it-works">
-      <Subheader>Näin me teemme sen</Subheader>
-      <h2 className="section-header">Miten homma toimii?</h2>
-      <div className="container">
-        <Items>{howItems.map(HowItem)}</Items>
-      </div>
-    </section>
-  );
-};
 
 export default HowSection;

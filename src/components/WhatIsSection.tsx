@@ -5,7 +5,7 @@ import whatIsVauhtio from '../pages/what-is-vauhtio.jpeg';
 
 const WhatIsSection = () => {
   return (
-    <section className="what-is">
+    <Section>
       <div className="container">
         <Content>
           <ImageWrapper>
@@ -18,15 +18,28 @@ const WhatIsSection = () => {
             </LineContainer>
             <h2>Me autamme yritystäsi saamaan lupaavia tekijöitä!</h2>
             <p>
-              Vauhtion tavoitteena on auttaa työnantajia löytämään lahjakkuudet ja madaltaa kynnystä kokeilla junior kehittäjän kanssa työskentelemistä.
+              Vauhtion tavoitteena on auttaa työnantajia löytämään lahjakkuudet
+              ja madaltaa kynnystä kokeilla junior kehittäjän kanssa
+              työskentelemistä.
             </p>
-            <p>Vauhtiin päästään ilman työnantajariskiä ja kun siivet kantaa, yhteinen tavoitteemme on rekrytointi yritykseenne.</p>
+            <p>
+              Vauhtiin päästään ilman työnantajariskiä ja kun siivet kantaa,
+              yhteinen tavoitteemme on rekrytointi yritykseenne.
+            </p>
           </div>
         </Content>
       </div>
-    </section>
+    </Section>
   );
 };
+
+const Section = styled.section`
+  padding: 48px 0;
+
+  @media (min-width: 768px) {
+    padding: 96px 0;
+  }
+`;
 
 const LineContainer = styled.div`
   display: flex;
