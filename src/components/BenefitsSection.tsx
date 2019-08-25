@@ -49,8 +49,8 @@ const benefits: Benefit[] = [
 const BenefitsSection = () => {
   return (
     <Section>
-      <LeftEllipse src={ellipse} />
-      <RightEllipse src={ellipse} />
+      <LeftEllipse src={ellipse} alt="Left ellipse graphic" />
+      <RightEllipse src={ellipse} alt="Right ellipse graphic" />
       <Subtitle>Mitä Vauhtio tarjoaa?</Subtitle>
       <h2 className="section-header benefits__title">Näin hyödyt Vauhtiosta</h2>
       <div className="container">
@@ -102,7 +102,7 @@ const RightEllipse = styled(Ellipse)`
 `;
 
 const Subtitle = styled(Subheader)`
-  color: #b8f3ff;
+  color: #c7f6ff;
 `;
 
 const Benefits = styled.div`

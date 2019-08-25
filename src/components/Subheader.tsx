@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Subheader = styled.h4`
   text-align: center;
-  color: #6c63ff;
+  color: #5E55EC;
   font-family: Lato;
 `;
 
