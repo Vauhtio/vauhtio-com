@@ -18,7 +18,7 @@ const howItems: HowSectionItem[] = [
   {
     title: 'Koulutamme ammattilaisia',
     description:
-      'Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen koulutuksen, jossa opiskelijoista puristetaan ammattiuran ensimmäistä askelta ottavia junior kehittäjiä. Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi teknologioilla ja käytännöillä.',
+      'Vauhtion Onboarding ohjelmaan valitut käyvät läpi timanttisen koulutuksen, jossa opiskelijoista puristetaan ammattiuran ensimmäistä askelta ottavia junior-kehittäjiä. Tarvittaessa Onboarding voidaan räätälöidä sinun projektisi teknologioilla ja käytännöillä.',
     icon: starIcon,
     iconAlt: 'Star',
   },

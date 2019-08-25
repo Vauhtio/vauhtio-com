@@ -19,7 +19,7 @@ const WhatIsSection = () => {
             <h2>Me autamme yritystäsi saamaan lupaavia tekijöitä!</h2>
             <p>
               Vauhtion tavoitteena on auttaa työnantajia löytämään lahjakkuudet
-              ja madaltaa kynnystä kokeilla junior kehittäjän kanssa
+              ja madaltaa kynnystä kokeilla junior-kehittäjän kanssa
               työskentelemistä.
             </p>
             <p>
