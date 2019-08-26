@@ -1,11 +1,11 @@
 import React from 'react';
 
-import searchIcon from '../pages/search.png';
-import starIcon from '../pages/star.png';
-import helpIcon from '../pages/help.png';
+import searchIcon from '../../pages/search.png';
+import starIcon from '../../pages/star.png';
+import helpIcon from '../../pages/help.png';
 import styled from 'styled-components';
 import HowItem, { HowSectionItem } from './HowItem';
-import Subheader from './Subheader';
+import Subheader from '../Subheader';
 
 const howItems: HowSectionItem[] = [
   {

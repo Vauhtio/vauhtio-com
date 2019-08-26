@@ -1,10 +1,10 @@
 import React from 'react';
 import TeamMemberItem, { TeamMember } from './TeamMemberItem';
 
-import henrik from '../pages/henrik.jpg';
-import timo from '../pages/timo.jpeg';
+import henrik from '../../pages/henrik.jpg';
+import timo from '../../pages/timo.jpeg';
 import styled from 'styled-components';
-import Subheader from './Subheader';
+import Subheader from '../Subheader';
 
 const teamMembers: TeamMember[] = [
   {

@@ -4,11 +4,11 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageHeader from '../components/PageHeader';
 import team from '../pages/team2.jpeg';
-import IntroductionSection from '../components/IntroductionSection';
+import IntroductionSection from '../components/RekryPage/IntroductionSection';
 import './rekry.css';
-import TimelineSection from '../components/TimelineSection';
-import WhoFitsSection from '../components/WhoFitsSection';
-import TestimonialsSection from '../components/TestimonialsSection';
+import TimelineSection from '../components/RekryPage/TimelineSection';
+import WhoFitsSection from '../components/RekryPage/WhoFitsSection';
+import TestimonialsSection from '../components/RekryPage/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 
 import triangle from '../pages/triangle-grey.svg';

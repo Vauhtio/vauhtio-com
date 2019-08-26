@@ -4,10 +4,10 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './home.css';
 
-import TeamSection from '../components/TeamSection';
-import HowSection from '../components/HowSection';
-import BenefitsSection from '../components/BenefitsSection';
-import WhatIsSection from '../components/WhatIsSection';
+import TeamSection from '../components/IndexPage/TeamSection';
+import HowSection from '../components/IndexPage/HowSection';
+import BenefitsSection from '../components/IndexPage/BenefitsSection';
+import WhatIsSection from '../components/IndexPage/WhatIsSection';
 import PageHeader from '../components/PageHeader';
 import ContactSection from '../components/ContactSection';
 import team from '../pages/team.jpeg';
