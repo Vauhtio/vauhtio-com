@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Navigation from './Navigation';
 import './layout.css';
 
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
