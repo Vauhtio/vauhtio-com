@@ -55,8 +55,8 @@ const BenefitsSection = () => {
       <h2 className="section-header benefits__title">Näin hyödyt Vauhtiosta</h2>
       <div className="container">
         <Benefits>
-          {benefits.map(benefit => (
-            <Container>
+          {benefits.map((benefit, index) => (
+            <Container key={index}>
               <Icon src={benefit.icon} alt={benefit.iconAlt} />
               <div>
                 <Title>{benefit.title}</Title>

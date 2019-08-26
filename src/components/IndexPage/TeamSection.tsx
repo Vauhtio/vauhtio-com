@@ -41,7 +41,11 @@ const TeamSection = () => {
       <h2 className="section-header">Huipputiimi</h2>
 
       <div className="container">
-        <TeamMembers>{teamMembers.map(TeamMemberItem)}</TeamMembers>
+        <TeamMembers>
+          {teamMembers.map((teamMember, index) => (
+            <TeamMemberItem teamMember={teamMember} key={index} />
+          ))}
+        </TeamMembers>
       </div>
     </section>
   );

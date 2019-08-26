@@ -12,16 +12,16 @@ type Props = {
   teamMember: TeamMember;
 };
 
-const TeamMemberItem = (teamMember: TeamMember) => {
+const TeamMemberItem = (props: Props) => {
   return (
     <Container>
       <ImageWrapper>
-        <Image teamMember={teamMember} />
+        <Image teamMember={props.teamMember} />
       </ImageWrapper>
-      <Title>{teamMember.title}</Title>
-      <Name>{teamMember.name}</Name>
+      <Title>{props.teamMember.title}</Title>
+      <Name>{props.teamMember.name}</Name>
       <Separator />
-      <Description>{teamMember.description}</Description>
+      <Description>{props.teamMember.description}</Description>
     </Container>
   );
 };

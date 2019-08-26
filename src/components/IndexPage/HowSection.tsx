@@ -37,7 +37,11 @@ const HowSection = () => {
       <Subheader>Näin me teemme sen</Subheader>
       <h2 className="section-header">Miten homma toimii?</h2>
       <div className="container">
-        <Items>{howItems.map(HowItem)}</Items>
+        <Items>
+          {howItems.map((howItem, index) => (
+            <HowItem howItem={howItem} key={index} />
+          ))}
+        </Items>
       </div>
     </Section>
   );

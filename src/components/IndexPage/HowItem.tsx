@@ -8,18 +8,22 @@ export type HowSectionItem = {
   iconAlt: string;
 };
 
-const HowItem = (howItem: HowSectionItem) => {
+type Props = {
+  howItem: HowSectionItem;
+};
+
+const HowItem = (props: Props) => {
   return (
     <Container>
       <div className="how-item__icon-wrapper">
         <img
           className="how-item__icon"
-          src={howItem.icon}
-          alt={howItem.iconAlt}
+          src={props.howItem.icon}
+          alt={props.howItem.iconAlt}
         />
       </div>
-      <Title>{howItem.title}</Title>
-      <p className="how-item__description">{howItem.description}</p>
+      <Title>{props.howItem.title}</Title>
+      <p className="how-item__description">{props.howItem.description}</p>
     </Container>
   );
 };
