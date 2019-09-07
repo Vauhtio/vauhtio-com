@@ -1,7 +1,7 @@
 import React from 'react';
 import Testimonial, { Testimonial as TestimonialType } from './Testimonial';
-import mikko from '../../pages/testimonials/mikko.jpeg';
-import mahady from '../../pages/testimonials/mahady.jpeg';
+import mikko from '../../images/testimonials/mikko.jpeg';
+import mahady from '../../images/testimonials/mahady.jpeg';
 
 const testimonials: TestimonialType[] = [
   {
