@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import whatIsVauhtio from '../../pages/what-is-vauhtio.jpeg';
+import whatIsVauhtio from '../../images/what-is-vauhtio.jpeg';
 
 const WhatIsSection = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import envelope from '../pages/envelope.png';
+import envelope from '../images/envelope.png';
 import styled from 'styled-components';
 import Footer from './Footer';
 

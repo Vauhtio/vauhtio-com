@@ -1,6 +1,6 @@
 import React from 'react';
 
-import checkMark from '../../pages/check-circle.png';
+import checkMark from '../../images/check-circle.png';
 
 const features = [
   {

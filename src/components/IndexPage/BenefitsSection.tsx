@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import timer from '../../pages/timer.png';
-import check from '../../pages/check.png';
-import exporting from '../../pages/exporting.png';
-import file from '../../pages/file.png';
-import ellipse from '../../pages/ellipse.png';
+import timer from '../../images/timer.png';
+import check from '../../images/check.png';
+import exporting from '../../images/exporting.png';
+import file from '../../images/file.png';
+import ellipse from '../../images/ellipse.png';
 import Subheader from '../Subheader';
 
 type Benefit = {

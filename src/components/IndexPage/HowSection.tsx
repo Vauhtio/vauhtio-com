@@ -1,8 +1,8 @@
 import React from 'react';
 
-import searchIcon from '../../pages/search.png';
-import starIcon from '../../pages/star.png';
-import helpIcon from '../../pages/help.png';
+import searchIcon from '../../images/search.png';
+import starIcon from '../../images/star.png';
+import helpIcon from '../../images/help.png';
 import styled from 'styled-components';
 import HowItem, { HowSectionItem } from './HowItem';
 import Subheader from '../Subheader';

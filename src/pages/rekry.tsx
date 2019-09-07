@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageHeader from '../components/PageHeader';
-import team from '../pages/team2.jpeg';
+import team from '../images/team2.jpeg';
 import IntroductionSection from '../components/RekryPage/IntroductionSection';
 import './rekry.css';
 import TimelineSection from '../components/RekryPage/TimelineSection';
@@ -11,7 +11,7 @@ import WhoFitsSection from '../components/RekryPage/WhoFitsSection';
 import TestimonialsSection from '../components/RekryPage/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 
-import triangle from '../pages/triangle-grey.svg';
+import triangle from '../images/triangle-grey.svg';
 
 const SecondPage = () => (
   <Layout>

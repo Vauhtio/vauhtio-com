@@ -10,8 +10,8 @@ import BenefitsSection from '../components/IndexPage/BenefitsSection';
 import WhatIsSection from '../components/IndexPage/WhatIsSection';
 import PageHeader from '../components/PageHeader';
 import ContactSection from '../components/ContactSection';
-import team from '../pages/team.jpeg';
-import triangle from '../pages/triangle.svg';
+import team from '../images/team.jpeg';
+import triangle from '../images/triangle.svg';
 
 const ctaEmail = 'timo.isoviita@vauhtio.com';
 
