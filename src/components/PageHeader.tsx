@@ -1,17 +1,40 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
+
+import BackgroundImage from 'gatsby-background-image';
+import { FluidObject } from 'gatsby-image';
 
 type Props = {
   title: string;
   description: string;
   ctaText: string;
   ctaEmail: string;
-  backgroundImage: string;
+  backgroundImage: FluidObject;
+};
+
+const JustPageHeader: React.FC<{
+  className?: string;
+  background: FluidObject;
+}> = props => {
+  return (
+    <BackgroundImage
+      Tag="header"
+      className={props.className}
+      fluid={[
+        'linear-gradient(317.71deg, #3e249e 0.68%, rgba(159, 153, 250, 0.5) 99.1%)',
+        props.background,
+      ]}
+      backgroundColor={`#040e18`}
+    >
+      {props.children}
+    </BackgroundImage>
+  );
 };
 
 const PageHeader = (props: Props) => {
   return (
-    <Container backgroundImageUrl={props.backgroundImage}>
+    <Container background={props.backgroundImage}>
       <Header>{props.title}</Header>
       <p className="header__description">{props.description}</p>
       <a href={`mailto:${props.ctaEmail}`} className="header__cta">
@@ -21,15 +44,9 @@ const PageHeader = (props: Props) => {
   );
 };
 
-const Container = styled.header<{ backgroundImageUrl: string }>`
+const Container = styled(JustPageHeader)`
   height: 80vh;
 
-  background-image: linear-gradient(
-      317.71deg,
-      #3e249e 0.68%,
-      rgba(159, 153, 250, 0.5) 99.1%
-    ),
-    url(${props => props.backgroundImageUrl});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
