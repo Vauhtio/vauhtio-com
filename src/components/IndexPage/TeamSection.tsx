@@ -7,24 +7,19 @@ import TeamMemberItem, { TeamMember } from './TeamMemberItem';
 import Subheader from '../Subheader';
 
 const TeamSection = () => {
-  const timo = useStaticQuery<{
+  const henrik = useStaticQuery<{
     desktop: { childImageSharp: { fluid: FluidObject } };
+    testi: { childImageSharp: { fluid: FluidObject } };
   }>(graphql`
     query {
-      desktop: file(relativePath: { eq: "timo.jpeg" }) {
+      desktop: file(relativePath: { eq: "henrik.jpg" }) {
         childImageSharp {
           fluid(quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-    }
-  `);
-  const henrik = useStaticQuery<{
-    desktop: { childImageSharp: { fluid: FluidObject } };
-  }>(graphql`
-    query {
-      desktop: file(relativePath: { eq: "henrik.jpg" }) {
+      testi: file(relativePath: { eq: "timo.jpeg" }) {
         childImageSharp {
           fluid(quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -40,7 +35,7 @@ const TeamSection = () => {
       title: 'CEO & Founder',
       description:
         'Vauhtioon etsin sellaisia ihmisiä, kenen kanssa itse haluaisin työskennellä. Näkemyksessä auttaa yli kymmenen vuoden kokemus kehittäjän tehtävistä. Vauhtiossa vastaan liiketoiminnasta, taloudesta ja asiakkuuksista. ',
-      image: timo.desktop.childImageSharp.fluid,
+      image: henrik.testi.childImageSharp.fluid,
     },
     {
       name: 'Henrik Raitasola',
