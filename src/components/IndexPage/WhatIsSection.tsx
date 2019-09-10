@@ -1,15 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import whatIsVauhtio from '../../images/what-is-vauhtio.jpeg';
+import Img, { FluidObject } from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const WhatIsSection = () => {
+  const data = useStaticQuery<{
+    desktop: { childImageSharp: { fluid: FluidObject } };
+  }>(graphql`
+    query {
+      desktop: file(relativePath: { eq: "what-is-vauhtio.jpeg" }) {
+        childImageSharp {
+          fluid(quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Section>
       <div className="container">
         <Content>
           <ImageWrapper>
-            <Image />
+            <Image fluid={data.desktop.childImageSharp.fluid} />
           </ImageWrapper>
           <div>
             <LineContainer>
@@ -32,6 +47,20 @@ const WhatIsSection = () => {
     </Section>
   );
 };
+
+const Image = styled(Img)`
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: scaleX(-1);
+`;
 
 const Section = styled.section`
   padding: 48px 0;
@@ -86,21 +115,6 @@ const ImageWrapper = styled.div`
   @media (min-width: 768px) {
     height: 365px;
   }
-`;
-
-const Image = styled.div`
-  position: absolute;
-  left: 24px;
-  top: 24px;
-  width: 100%;
-  height: 100%;
-  background: url(${whatIsVauhtio});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: scaleX(-1);
 `;
 
 export default WhatIsSection;
