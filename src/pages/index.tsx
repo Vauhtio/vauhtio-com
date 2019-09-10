@@ -11,26 +11,13 @@ import WhatIsSection from '../components/IndexPage/WhatIsSection';
 import PageHeader from '../components/PageHeader';
 import ContactSection from '../components/ContactSection';
 import triangle from '../images/triangle.svg';
-import { useStaticQuery, graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { useImage } from '../hooks/useImage';
 
 const ctaEmail = 'timo.isoviita@vauhtio.com';
 
 const IndexPage = () => {
-  const data = useStaticQuery<{
-    desktop: { childImageSharp: { fluid: FluidObject } };
-  }>(graphql`
-    query {
-      desktop: file(relativePath: { eq: "team.jpeg" }) {
-        childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
-  const imageData = data.desktop.childImageSharp.fluid;
+  const data = useImage();
+  const imageData = data.team.childImageSharp.fluid;
   return (
     <Layout>
       <SEO title="Koti" />

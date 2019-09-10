@@ -11,24 +11,10 @@ import TestimonialsSection from '../components/RekryPage/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 
 import triangle from '../images/triangle-grey.svg';
-import { useStaticQuery, graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
+import { useImage } from '../hooks/useImage';
 
 const SecondPage = () => {
-  const data = useStaticQuery<{
-    desktop: { childImageSharp: { fluid: FluidObject } };
-  }>(graphql`
-    query {
-      desktop: file(relativePath: { eq: "team2.jpeg" }) {
-        childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
-  const imageData = data.desktop.childImageSharp.fluid;
+  const data = useImage();
   return (
     <Layout>
       <SEO title="Rekry" />
@@ -38,7 +24,7 @@ const SecondPage = () => {
         description="Olemme mentoroiva IT-konsulttitalo, jonka tavoitteena on oman koulutusohjelman kautta saada nuoria lupauksia konsulteiksi IT-alalle. Tule ohjelmaamme, jossa pääset oikeisiin koodausprojekteihin mahdollisimman nopeasti!"
         ctaText="Hae nyt"
         ctaEmail="rekry@vauhtio.com"
-        backgroundImage={imageData}
+        backgroundImage={data.team2.childImageSharp.fluid}
       />
 
       <IntroductionSection />

@@ -1,33 +1,12 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { FluidObject } from 'gatsby-image';
 
 import TeamMemberItem, { TeamMember } from './TeamMemberItem';
 import Subheader from '../Subheader';
+import { useImage } from '../../hooks/useImage';
 
 const TeamSection = () => {
-  const henrik = useStaticQuery<{
-    desktop: { childImageSharp: { fluid: FluidObject } };
-    testi: { childImageSharp: { fluid: FluidObject } };
-  }>(graphql`
-    query {
-      desktop: file(relativePath: { eq: "henrik.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      testi: file(relativePath: { eq: "timo.jpeg" }) {
-        childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
+  const data = useImage();
 
   const teamMembers: TeamMember[] = [
     {
@@ -35,14 +14,14 @@ const TeamSection = () => {
       title: 'CEO & Founder',
       description:
         'Vauhtioon etsin sellaisia ihmisiä, kenen kanssa itse haluaisin työskennellä. Näkemyksessä auttaa yli kymmenen vuoden kokemus kehittäjän tehtävistä. Vauhtiossa vastaan liiketoiminnasta, taloudesta ja asiakkuuksista. ',
-      image: henrik.testi.childImageSharp.fluid,
+      image: data.timo.childImageSharp.fluid,
     },
     {
       name: 'Henrik Raitasola',
       title: 'CTO & Founder',
       description:
         'Vauhtiossa autan kehittäjiämme pääsemään maksimaaliseen osaamiseen niin lyhyessä ajassa kuin mahdollista. Viiden vuoden kehittäjän kokemuksellani pystyn auttamaan sinun yritystäsi samaan projektiisi sopivat kehittäjät.',
-      image: henrik.desktop.childImageSharp.fluid,
+      image: data.henrik.childImageSharp.fluid,
     },
   ];
   return (

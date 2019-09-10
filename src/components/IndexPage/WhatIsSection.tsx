@@ -1,30 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Img, { FluidObject } from 'gatsby-image';
-import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import { useImage } from '../../hooks/useImage';
 
 const WhatIsSection = () => {
-  const data = useStaticQuery<{
-    desktop: { childImageSharp: { fluid: FluidObject } };
-  }>(graphql`
-    query {
-      desktop: file(relativePath: { eq: "what-is-vauhtio.jpeg" }) {
-        childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
+  const data = useImage();
 
   return (
     <Section>
       <div className="container">
         <Content>
           <ImageWrapper>
-            <Image fluid={data.desktop.childImageSharp.fluid} />
+            <Image fluid={data.whatIsVauhtio.childImageSharp.fluid} />
           </ImageWrapper>
           <div>
             <LineContainer>
