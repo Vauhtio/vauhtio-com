@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img, { FluidObject } from 'gatsby-image';
 
 export type TeamMember = {
   name: string;
   title: string;
   description: string;
-  image: string;
+  image: FluidObject;
 };
 
 type Props = {
@@ -16,7 +17,7 @@ const TeamMemberItem = (props: Props) => {
   return (
     <Container>
       <ImageWrapper>
-        <Image teamMember={props.teamMember} />
+        <Image fluid={props.teamMember.image} />
       </ImageWrapper>
       <Title>{props.teamMember.title}</Title>
       <Name>{props.teamMember.name}</Name>
@@ -39,13 +40,12 @@ const ImageWrapper = styled.div`
   left: -24px;
 `;
 
-const Image = styled.div<Props>`
+const Image = styled(Img)`
   position: absolute;
   left: 24px;
   top: 24px;
   width: 100%;
   height: 300px;
-  background: url(${props => props.teamMember.image});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
