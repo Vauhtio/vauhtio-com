@@ -47,8 +47,8 @@ const TestimonialsSection = () => {
       <div className="container">
         <h2>Mitä aikaisemmat junnumme sanovat?</h2>
         <div className="testimonials">
-          {testimonials.map(testimonial => (
-            <Testimonial testimonial={testimonial} />
+          {testimonials.map((testimonial, index) => (
+            <Testimonial testimonial={testimonial} key={index} />
           ))}
         </div>
       </div>

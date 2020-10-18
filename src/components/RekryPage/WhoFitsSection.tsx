@@ -37,9 +37,9 @@ const WhoFitsSection = () => {
             </p>
           </div>
           <div>
-            {features.map(feature => {
+            {features.map((feature, index) => {
               return (
-                <div className="feature">
+                <div className="feature" key={index}>
                   <div className="feature__title">
                     <img src={checkMark} alt="Checkmark" />
                     {feature.title}

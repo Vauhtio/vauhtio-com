@@ -9,8 +9,8 @@ const TimelineCard = (props: Props) => {
   return (
     <div className="card">
       <h3>{props.header}</h3>
-      {props.paragraphs.map(paragraph => {
-        return <p>{paragraph}</p>;
+      {props.paragraphs.map((paragraph, index) => {
+        return <p key={index}>{paragraph}</p>;
       })}
       <div className="card__line">
         <div className="card__line__point"></div>
