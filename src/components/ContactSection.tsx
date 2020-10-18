@@ -4,23 +4,25 @@ import envelope from '../images/envelope.png';
 import styled from 'styled-components';
 import Footer from './Footer';
 
+const ctaEmail = 'timo.isoviita@vauhtio.com';
+
 type Props = {
   triangle: string;
   description: string;
-  ctaEmail: string;
+  onRef: React.MutableRefObject<HTMLDivElement | null>;
 };
 
 const ContactSection = (props: Props) => {
   return (
     <Container>
-      <div className="container">
+      <div className="container" ref={props.onRef}>
         <Triangle src={props.triangle} alt="Overlay" />
         <Card>
           <Title>Kiinnostuitko?</Title>
           <Description>{props.description}</Description>
-          <CtaLink href={`mailto:${props.ctaEmail}`}>
+          <CtaLink href={`mailto:${ctaEmail}`}>
             <Envelope src={envelope} alt="Envelope" />
-            {props.ctaEmail}
+            {ctaEmail}
           </CtaLink>
         </Card>
       </div>
