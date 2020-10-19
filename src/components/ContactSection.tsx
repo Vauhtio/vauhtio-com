@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import envelope from '../images/envelope.png';
 import styled from 'styled-components';
@@ -8,20 +8,36 @@ type Props = {
   triangle: string;
   description: string;
   ctaEmail: string;
+  onRef: React.MutableRefObject<HTMLDivElement | null>;
 };
 
 const ContactSection = (props: Props) => {
+  const [isEmailShown, setIsEmailShown] = useState(false);
+
+  const showEmail = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    event.preventDefault();
+    setIsEmailShown(true);
+  };
+
   return (
     <Container>
-      <div className="container">
+      <div className="container" ref={props.onRef}>
         <Triangle src={props.triangle} alt="Overlay" />
         <Card>
           <Title>Kiinnostuitko?</Title>
           <Description>{props.description}</Description>
-          <CtaLink href={`mailto:${props.ctaEmail}`}>
-            <Envelope src={envelope} alt="Envelope" />
-            {props.ctaEmail}
-          </CtaLink>
+          {isEmailShown ? (
+            <CtaLink href={`mailto:${props.ctaEmail}`}>
+              <Envelope src={envelope} alt="Envelope" />
+              {props.ctaEmail}
+            </CtaLink>
+          ) : (
+            <ShowEmailLink href="#" onClick={showEmail}>
+              Näytä sähköposti
+            </ShowEmailLink>
+          )}
         </Card>
       </div>
       <Footer />
@@ -78,6 +94,12 @@ const CtaLink = styled.a`
   justify-content: center;
   color: #302f3c;
   font-family: lato;
+`;
+
+const ShowEmailLink = styled.a`
+  margin-top: 32px;
+  display: block;
+  color: #5e55ec;
 `;
 
 export default ContactSection;

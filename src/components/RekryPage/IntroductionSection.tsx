@@ -13,8 +13,8 @@ const IntroductionSection = () => {
     <section className="introduction-section">
       <div className="container">
         <h2>Haluatko vauhtia hyppyysi opiskelijasta IT-ammattilaiseksi?</h2>
-        {paragraphs.map(paragraph => (
-          <p>{paragraph}</p>
+        {paragraphs.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
         ))}
       </div>
     </section>

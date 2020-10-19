@@ -8,7 +8,7 @@ type Props = {
   title: string;
   description: string;
   ctaText: string;
-  ctaEmail: string;
+  onCtaPress(): void;
   backgroundImage: FluidObject;
 };
 
@@ -36,9 +36,9 @@ const PageHeader = (props: Props) => {
     <Container background={props.backgroundImage}>
       <Header>{props.title}</Header>
       <p className="header__description">{props.description}</p>
-      <a href={`mailto:${props.ctaEmail}`} className="header__cta">
+      <button onClick={props.onCtaPress} className="header__cta">
         {props.ctaText}
-      </a>
+      </button>
     </Container>
   );
 };
